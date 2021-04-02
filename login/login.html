@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mellow Flow Advertising</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="login.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+    $(function(){
+      $("#header").load("../headers/BasicHeader.html");
+      $("#footer").load("../footers/BasicFooter.html");
+    });
+    </script>
+    <div id="header"></div>
+  </head>
+  <body>
+    <div class="main">
+      <p class="sign" align="center">Sign in</p>
+      <form class="form1">
+        <input class="un " type="text" align="center" placeholder="Username">
+        <input class="pass" type="password" align="center" placeholder="Password">
+        <a class="submit" align="center">Sign in</a>
+        <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+
+
+      </div>
+
+  </body>
+
+<!--  Footer  -->
+  <div id="footer"></div>
+</html>
