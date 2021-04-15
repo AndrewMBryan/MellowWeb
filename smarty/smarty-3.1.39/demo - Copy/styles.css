@@ -1,0 +1,30 @@
+.header {
+  color: #EBD414;
+}
+.main_title {
+  font-family: Inknut Antiqua;
+  text-align: center;
+  font-size: 124px;
+  color: #ffc200;
+  text-shadow: 1px 2px 4px #000000;
+}
+
+.title {
+  text-align: center;
+  font-size: 54px;
+  color: #EEDB37;
+
+}
+
+html {
+  background-color: #0d1c9a;
+  background-image: repeating-linear-gradient(to right,#0d1e97, #142beb 50%, #0d1e97);
+
+}
+
+.image-main-container {
+  display: block;
+  height: 700px;
+  width: 100%;
+
+}
