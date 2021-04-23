@@ -1,5 +1,6 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
+
 body,
 p {
   padding: 0;
@@ -7,14 +8,14 @@ p {
 }
 
 body {
-  background: #272726;
+  /*background: #272726;*/
 }
 
 label {
   text-align: left;
   font-family: Helvetica, sans-serif;
   font-size: 1.25em;
-  color: #777776;
+  color: #EEDB37;
   display: block;
 }
 
@@ -40,7 +41,7 @@ div#controls {
 
       div#controls div#info a {
         font-size: 1.1em;
-        color: khaki;
+        color: #EEDB37;
         text-decoration: underline;
         cursor: pointer;
       }
@@ -75,7 +76,7 @@ div#controls {
     font-family: Helvetica-LightOblique, Helvetica, sans-serif;
     font-style: oblique;
     font-size: 1.25em;
-    color: #777776;
+    color: #EEDB37;
   }
 
   div#controls div#info #client-name {
@@ -83,7 +84,7 @@ div#controls {
     margin-bottom: 1em;
     font-family: "Helvetica Light", Helvetica, sans-serif;
     font-size: 1.25em;
-    color: #777776;
+    color: #EEDB37;
   }
 
   div#controls button {
@@ -117,9 +118,9 @@ div#controls {
     }
 
     div#controls div#call-controls button {
-      color: #fff;
+      color: #EEDB37;
       background: 0 0;
-      border: 1px solid #686865;
+      border: 1px solid #EEDB37;
     }
 
       div#controls div#call-controls button#button-hangup {
@@ -127,7 +128,7 @@ div#controls {
       }
 
   div#controls div#log {
-    border: 1px solid #686865;
+    border: 1px solid #EEDB37;
     width: 35%;
     height: 9.5em;
     margin-top: 2.75em;
@@ -138,7 +139,7 @@ div#controls {
   }
 
     div#controls div#log p {
-      color: #686865;
+      color: #EEDB37;
       font-family: 'Share Tech Mono', 'Courier New', Courier, fixed-width;
       font-size: 1.25em;
       line-height: 1.25em;
