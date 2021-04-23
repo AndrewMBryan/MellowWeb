@@ -1,49 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <header class="text-gray-600 body-font">
-  <style>
-    input{
-      width: 20%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      margin-left: 30%;
-      margin-right: 30%;
-    }
-    label{
-      margin-left: 30%;
-      margin-right: 30%;
-    }
-    p{
-      margin-left: 30%;
-      margin-right: 30%;
-    }
-  </style>
-
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
-      <span class="ml-3 text-xl header">Mellow Flow Advertising</span>
-    </a>
-    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-gray-900">Home Page</a>
-      <a class="mr-5 hover:text-gray-900">Dashboard</a>
-      <a class="mr-5 hover:text-gray-900">Contacts</a>
-      <a class="mr-5 hover:text-gray-900">Complaints</a>
-      <a class="mr-5 hover:text-gray-900">View Database</a>
-    </nav>
-
-  </div>
-</header>
-</head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mellow Flow Advertising</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      input{
+        width: 20%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        margin-left: 30%;
+        margin-right: 30%;
+      }
+      label{
+        margin-left: 30%;
+        margin-right: 30%;
+      }
+      p{
+        margin-left: 30%;
+        margin-right: 30%;
+      }
+    </style>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+      //loads header and footer template from separate files
+    $(function(){
+      $("#header").load("headers/EmployeeHeader.html");
+      $("#footer").load("footers/BasicFooter.html");
+    });
+    </script>
+    <div id="header"></div>
+  </head>
 <body>
   <?php
   // parameters for connecting to database
