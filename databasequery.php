@@ -9,22 +9,15 @@
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
-      input{
-        width: 20%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        margin-left: 30%;
-        margin-right: 30%;
-      }
-      label{
-        margin-left: 30%;
-        margin-right: 30%;
-      }
-      p{
-        margin-left: 30%;
-        margin-right: 30%;
-      }
+    #content{
+      margin-left:30%;
+    }
+    input{
+      width: 20%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
     </style>
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -94,6 +87,7 @@ echo "0 results";
 // if the submit button is pressed check the input to see which table to pull from
 if( isset($_GET['submit']) )
   {
+      $output = "";
       $val1 = htmlentities($_GET['table']);
       $val2 = htmlentities($_GET['result']);
       if ($val1 == "customers"){
@@ -105,6 +99,7 @@ if( isset($_GET['submit']) )
     }
   }
   ?>
+  <div id= "content">
   <br>
   <p>
     Enter the Table and specific information you'd like to retrieve from the database below:
@@ -118,5 +113,7 @@ if( isset($_GET['submit']) )
     <br>
     <input type="submit" name = "submit" value="Submit">
   </form>
+</div>
+
 </body>
 </html>
