@@ -36,10 +36,10 @@
 <body>
   <?php
   // parameters for connecting to database
-  $servername = "localhost";
-  $username = "root";
-  $password = "12AsDf!!";
-  $db = "capstone";
+  $servername = "sql111.byethost5.com";
+  $username = "b5_28454471";
+  $password = "AdvancedF0rLife";
+  $db = "b5_28454471_mellowflow";
 
   // Create connection
   $conn = new mysqli($servername, $username, $password,$db);
