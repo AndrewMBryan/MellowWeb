@@ -87,7 +87,6 @@ echo "0 results";
 // if the submit button is pressed check the input to see which table to pull from
 if( isset($_GET['submit']) )
   {
-      $output = "";
       $val1 = htmlentities($_GET['table']);
       $val2 = htmlentities($_GET['result']);
       if ($val1 == "customers"){
