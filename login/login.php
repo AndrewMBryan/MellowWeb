@@ -57,7 +57,7 @@
       <form class="form1">
         <input name = "un" class="un " type="text" align="center" placeholder="Username">
         <input name = "pass" class="pass" type="password" align="center" placeholder="Password">
-        <a class="submit" align="center">Sign in</a>
+        <a name = "submit" class="submit" align="center">Sign in</a>
         <p class="forgot" align="center"><a href="#">Forgot Password?</p>
 
 
