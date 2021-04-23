@@ -115,4 +115,5 @@ if( isset($_GET['submit']) )
 </div>
 
 </body>
+<div id="footer"></div>
 </html>

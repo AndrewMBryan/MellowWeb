@@ -36,7 +36,7 @@
       $sql = "SELECT idemployee FROM employee WHERE employeeusername = '".$user."' AND employeepassword = '".$pass."'";
       $result = $conn->query($sql);
       if($result->num_rows == 1) {
-        header("Location:databasequery.php");
+        header("Location:../databasequery.php");
   } else {
     echo("Invalid username or password");
 }
