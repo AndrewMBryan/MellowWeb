@@ -32,8 +32,9 @@
     if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
     }
-    function login($conn, $user, $pass){
-      $result = $mysqli->query("SELECT idemployee FROM employee WHERE employeeusername = '".$user."' AND employeepassword = '".$pass."'");
+       function login($conn, $user, $pass){
+      $sql = "SELECT idemployee FROM employee WHERE employeeusername = '".$user."' AND employeepassword = '".$pass."'";
+      $result = $conn->query($sql);
       if($result->num_rows == 1) {
         header("Location:databasequery.php");
   } else {
@@ -44,7 +45,7 @@
       {
           $val1 = htmlentities($_GET['un']);
           $val2 = htmlentities($_GET['pass']);
-          login($conn,val1,val2);
+          login($conn,$val1,$val2);
       }
       ?>
     <div id="header"></div>
@@ -57,7 +58,7 @@
         <input name = "un" class="un " type="text" align="center" placeholder="Username">
         <input name = "pass" class="pass" type="password" align="center" placeholder="Password">
         <input class = "submit" type="submit" name = "submit" value="Submit">
-        <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+        </form>
 
 
       </div>
