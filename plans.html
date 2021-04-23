@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mellow Flow Advertising</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #subhead{
+      font-size: 40px;
+      margin-left: 30%;
+      margin-right: 30%;
+      color: white;
+    }
+    #container{
+      width : 66%
+      height: 66%;
+    }
+    .sub{
+      width : 30%;
+      color: white;
+      margin-left: 3%;
+      float:left;
+    }
+    #right{
+      align-items: right;
+    }
+    #bottom{
+      margin-left: 35%;
+      margin-right:35%;
+    }
+    </style>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+    //loads header and footer template from separate files
+    $(function(){
+      $("#header").load("headers/BasicHeader.html");
+      $("#footer").load("footers/BasicFooter.html");
+    });
+    </script>
+    <div id="header"></div>
+  </head>
+<body>
+<h1 id = "subhead">
+  Our Subscription Plans
+</h1>
+<br>
+<br>
+<container id = "container">
+<div class = "sub",id = "left">
+<h2>Flow Plan</h2>
+<p>We will promote your business on social media and help you gain more attention from consumers.</p>
+</div>
+<div class = "sub",id = "middle">
+<h2>Extended Plan</h2>
+<p>Everything that the Flow Plan provides with a higher budget, opening new opportunities for your businesses.</p>
+</div>
+<div class = "sub",id = "right">
+<h2>Everything Plan</h2>
+<p>"Everything but the Kitchen Sink". A full expansive campaign created around your business.</p>
+</div>
+<br>
+<div class = "sub", id = "bottom">
+<h2>Custom Plan</h2>
+<p>If you are looking for a custom plan built around your business visit our contact form below.</p>
+</div>
+</container>
+</body>
+  <!--  Footer  -->
+    <div id="footer"></div>
+</html>

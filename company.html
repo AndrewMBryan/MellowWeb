@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mellow Flow Advertising</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+      //loads header and footer template from separate files
+    $(function(){
+      $("#header").load("headers/BasicHeader.html");
+      $("#footer").load("footers/BasicFooter.html");
+    });
+    </script>
+    <div id="header"></div>
+  </head>
+  <body>
+<div>
+  <p>
+    Mellow Flow was created in 2020 as a small startup in order to provide a personal experience for businesses looking to advertise digitally.
+     As a small business, we are able to provide very close and personal attention to all of our clients while still maintaining the quality of a large corporate entity.
+    </p>
+  </div>
+  <div>
+    <h1>
+      Our Team
+      </h1>
+      <img src="assets/andrew.jpg" alt="">
+      <p>
+        Andrew Bryan- Founder
+        </p>
+      <img src="assets/larry.jpg" alt="">
+      <p>
+        Laurence Madsen - Software Engineer
+        </p>
+    </div>
+  </body>
+</div>
+<!--  Footer  -->
+  <div id="footer"></div>
+</html>
