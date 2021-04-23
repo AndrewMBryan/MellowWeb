@@ -38,7 +38,7 @@
         header("Location: databasequery.php");
         exit();
   } else {
-    echo("Invalid username or password")
+    echo("Invalid username or password");
 }
     }
     if( isset($_GET['submit']) )
