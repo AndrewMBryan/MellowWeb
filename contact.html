@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mellow Flow Advertising</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        input[type=text], select, textarea {
+              width: 100%;
+              padding: 15px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              margin-top: 5px;
+              margin-bottom: 20px;
+        }
+        input[type=submit] {
+              background-color: green;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+        }
+        input[type=submit]:hover {
+              background-color: grey;
+        }
+        .contact {
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              padding: 20px;
+              width: 50%;
+              margin-left:25%;
+              margin-right:25%;
+        }
+      </style>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+      //loads header and footer template from separate files
+    $(function(){
+      $("#header").load("headers/BasicHeader.html");
+      $("#footer").load("footers/BasicFooter.html");
+    });
+    </script>
+    <div id="header"></div>
+  </head>
+  <body>
+    <div class="contact">
+      <form action="">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email..">
+
+        <label for="Company">Company</label>
+        <input type="text" id="company" name="company" placeholder="Company..">
+
+        <label for="Message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+  </body>
+</div>
+<!--  Footer  -->
+  <div id="footer"></div>
+</html>
