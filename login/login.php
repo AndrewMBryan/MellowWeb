@@ -35,8 +35,7 @@
     function login($conn, $user, $pass){
       $result = $mysqli->query("SELECT idemployee FROM employee WHERE employeeusername = '".$user."' AND employeepassword = '".$pass."'");
       if($result->num_rows == 1) {
-        header("Location: databasequery.php");
-        exit();
+        header("Location:databasequery.php");
   } else {
     echo("Invalid username or password");
 }
@@ -54,10 +53,10 @@
   <body>
     <div class="main">
       <p class="sign" align="center">Sign in</p>
-      <form class="form1">
+      <form class="form1" action="" method="get">
         <input name = "un" class="un " type="text" align="center" placeholder="Username">
         <input name = "pass" class="pass" type="password" align="center" placeholder="Password">
-        <a name = "submit" class="submit" align="center">Sign in</a>
+        <input class = "submit" type="submit" name = "submit" value="Submit">
         <p class="forgot" align="center"><a href="#">Forgot Password?</p>
 
 
