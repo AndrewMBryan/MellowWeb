@@ -1,0 +1,43 @@
+
+
+
+
+
+import requests, json
+import pandas as pd
+import openpyxl
+import xlrd
+
+api_key = 'AIzaSyAXU1TdAhdKicccFRET4DIdOEV_KifBx7o'
+url = "https://maps.googleapis.com/maps/api/place/textsearch/json?"
+
+cities = pd.read_excel('test.xlsx', sheet_name='test')
+
+cities.columns = ['id','states', 'cities']
+
+print(cities.info)
+
+query = input('Input company type: ')
+
+dataframe = pd.DataFrame()
+count = 0
+for row in cities.itertuples():
+    state = row.states
+    city = row.cities
+    queryType = query + ' ' + city + ' ' + state
+    r = requests.get(url + 'query=' + queryType + '&feilds=name/formatted_address' +
+                     '&key=' + api_key)
+    x = r.json()
+    y = x['results']
+    df = pd.DataFrame(y)
+    #df.drop(['business_status', 'geometry', 'icon', 'opening_hours', 'photos', 'plus_code', 'user_ratings_total'], axis=1, inplace=True)
+    df['state'] = state
+    df['city'] = city
+    print(df)
+    if count == 0:
+        dataframe = df
+    else:
+        dataframe = pd.concat([dataframe, df],ignore_index=True)
+    print(dataframe)
+    count += 1
+dataframe.to_excel('fulltest.xlsx')
