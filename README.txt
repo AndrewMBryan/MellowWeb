@@ -29,4 +29,6 @@ This document is for understanding the elements and files within our Project
 
 3. The Mellow Flow Advertising Website
   a. Our Demo website can be asscessed at http://mellowweb.byethost5.com/
+  b. To test the login feature use the credentials Username:davieboy Password:123
+  c. The only data in the database connected to the website is test data that we used to verify behavior, to test the databasequery.php you must first type the table you want to query (leads and customers) then type the query itself for example (idcustomers = 1 or leadname = 'test') it is important that you use the single quotes for string values. 
   
