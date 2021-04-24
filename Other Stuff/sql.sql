@@ -17,6 +17,7 @@ CREATE TABLE `employee` (
   `lnemployee` varchar(45) NOT NULL,
   `employeepassword` varchar(45) NOT NULL,
   `employeeemail` varchar(45) NOT NULL,
+   `employeeusername` varchar(45) NOT NULL,
   PRIMARY KEY (`idemployee`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 CREATE TABLE `customers` (
