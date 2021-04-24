@@ -26,5 +26,8 @@ html {
   display: block;
   height: 700px;
   width: 100%;
+}
 
+.pics{
+  width: 500px;
 }
